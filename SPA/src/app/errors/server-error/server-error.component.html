@@ -1,0 +1,37 @@
+<h4>
+    Error interno del servidor - Al refrescar la página se perderá la información
+</h4>
+
+<ng-container *ngIf="error">
+    <h5 class="text-danger">
+        Error: {{error.message}}
+    </h5>
+    <p class="font-weight-bold">
+        El que hizo el backend no hizo bien su trabajo, el team de UI no tiene la culpa
+    </p>
+    <p>
+        Siguientes pasos:
+    </p>
+    <ol>
+        <li>
+            Abrir las herramientas de desarrollador del navegador.
+        </li>
+        <li>
+            Validar la petición en la pestana de network.
+        </li>
+        <li>
+            Revisar la url de la petición - es correcta?
+        </li>
+        <li>
+            Revisar Postman, si la petición sigue fallando, Angular no tiene la culpa. es el backend.
+        </li>
+    </ol>
+    <p class="font-weight-bold">
+     A continuacion la pila de errores:
+    </p>
+    <code class="mt-5" style="background-color: rgb(0, 0, 0)">
+        {{error.details}}
+    </code>
+
+
+</ng-container>
