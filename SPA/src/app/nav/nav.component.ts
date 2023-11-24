@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AccontService } from '../_services/accont.service';
+import { AccontService } from '../_service/accont.service';
 import { Observable, of } from 'rxjs';
 import { User } from '../_models/user';
 import { Router } from '@angular/router';
